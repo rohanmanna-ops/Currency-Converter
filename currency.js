@@ -7,8 +7,11 @@ let fromButton=document.querySelector('.from select')
 let toButton=document.querySelector('.to select')
 let amt=document.querySelector('.amount input')
 let msg=document.querySelector('.msg')
+msg.innerText= "<---Result--->"
+msg.style.color="lightblue"
 
 function setmsg(val,amt,fromcurrency,tocurrency){
+    msg.style.color="red"
     msg.innerText= `${amt} ${fromcurrency} => ${val*amt} ${tocurrency}`
 
 }
@@ -65,9 +68,11 @@ newbutton.addEventListener('click',async (evt)=>{
     tocurrency=toButton.value
 
     let url=`https://apilayer.net/api/live?access_key=c5604b329edfa41c0f482502c0d76dd5&currencies=${tocurrency}&source=${fromcurrency}&format=1`
-
+    msg.innerText='Pls Wait ...'
+    msg.style.color='blue'
     let response= await fetch(url)
     let data=await response.json()
+
     add=fromcurrency+tocurrency
     add=String(add)
     val=data.quotes[add]

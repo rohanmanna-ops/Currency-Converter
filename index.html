@@ -3,41 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Currency Converter</title>
+    <title>Your Converter</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        <h2>Currency Converter</h2>
-        <form>
-            <div class="amount">
-                <p>Enter Amount</p> 
-                <input value="1" type="text">
-            </div>
-            <div class="drop_down">
-                <div class="from">
-                    <p>From</p>
-                    <div class="select_container">
-                        <img src="https://flagsapi.com/US/flat/64.png">
-                        <select name="from">
-                        </select>
+    <div class="logo">
+        YOUR CONVERTER 
+    </div>
+    <div class="navbar">
+        <div class="conv " style="color: cyan; font-size: larger ;"> Converters </div>
+        <i class="fa-solid fa-arrow-right" style="color: cyan; font-size: large ;"></i> 
+
+        <div class="curr_converter" style="margin-left: 2.5rem;">
+            <button style="color: rgb(223, 235, 49); font-size: larger ; background-color: #085259; font-weight: 900;">Currency</button>
+        </div>
+
+        <div class="Time_conv" style="margin-left: 1.5rem;">
+            <button style="color: rgb(223, 235, 49); font-size: larger ; background-color: #085259; font-weight: 900;" >Time</button>
+        </div>
+    </div>
+
+    <!-- Currency Converter -->
+    <div class="currency_converter">
+        <div class="container">
+            <h2>Currency Converter</h2>
+            <form>
+                <div class="amount">
+                    <p>Enter Amount</p> 
+                    <input value="1" type="text">
+                </div>
+                <div class="drop_down">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select_container">
+                            <img src="https://flagsapi.com/US/flat/64.png">
+                            <select name="from">
+                            </select>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <div class="to">
+                        <p>To</p>
+                        <div class="select_container">
+                            <img src="https://flagsapi.com/IN/flat/64.png">
+                            <select name="to">
+                            </select>
+                        </div>
+                    
                     </div>
                 </div>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                <div class="to">
-                    <p>To</p>
-                    <div class="select_container">
-                        <img src="https://flagsapi.com/IN/flat/64.png">
-                        <select name="to">
-                        </select>
-                    </div>
-                
-                </div>
-            </div>
-            <div class="msg"></div>
-            <button>Get Exchange Rate</button>
-        </form>
+                <div class="msg"></div>
+                <button>Get Exchange Rate</button>
+            </form>
+        </div>
     </div>
     <script src="codes.js"></script>
     <script src="currency.js"></script>

@@ -3,7 +3,67 @@
     padding: 0;
 }
 
-body{
+.logo{
+    display: flex;
+    height: 3rem;
+    background-color: #063751;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.navbar{
+    position: sticky;
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    align-items: center;
+    font-weight: 900;
+    background-color: #085259;
+    top: 0px ;
+    
+
+}
+.conv{
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+}
+.curr_converter {
+    height: 2.5rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    border: 1.2px solid transparent;
+}
+.curr_converter:hover{
+    border: 1.2px solid yellow;
+}
+.curr_converter:active{
+    height: 2.3rem;
+    width: 5.9rem;
+}
+
+.Time_conv{
+    height: 2.5rem;
+    width: 4.5rem;
+    display: flex;
+    align-items: center;
+    border: 1.2px solid transparent;
+}
+.Time_conv:hover{
+    border: 1.2px solid yellow;
+}
+.Time_conv:active{
+    height: 2.3rem;
+    width: 4.3rem;
+}
+.currency_converter{
     display: flex;
     justify-content: center;
     align-items: center ;

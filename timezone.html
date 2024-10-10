@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Converter</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div class="logo">
+        YOUR CONVERTER 
+    </div>
+    <div class="navbar">
+        <div class="conv " style="color: cyan; font-size: larger ;"> Converters </div>
+        <i class="fa-solid fa-arrow-right" style="color: cyan; font-size: large ;"></i> 
+
+        <div class="curr_converter" style="margin-left: 2.5rem;">
+            <button style="color: rgb(223, 235, 49); font-size: larger ; background-color: #085259; font-weight: 900;">Currency</button>
+        </div>
+
+        <div class="Time_conv" style="margin-left: 1.5rem;">
+            <button style="color: rgb(223, 235, 49); font-size: larger ; background-color: #085259; font-weight: 900;" >Time</button>
+        </div>
+    </div>
+
+    <!-- Time converter -->
+    <div class="time_converter">
+        <div class="time_container">
+            <h2> Time Converter</h2>
+
+            <div class="country">
+                <div class="country1">
+                    <h2>India</h2> 
+                    <div class="country1_select">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="c1">   
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="country2" >
+                    <h2>USA</h2>
+                    <div class="country2_select">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="c2">   
+                            <option> </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="country3" >
+                    <h2>England</h2>
+                    <div class="country3_select">
+                        <img src="https://flagsapi.com/GB/flat/64.png">
+                        <select name="c3">   
+                            <option> </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="time_zone">
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="ISO_Country.js"></script>    
+    <script src="codes.js"></script>
+</body>
+</html>
